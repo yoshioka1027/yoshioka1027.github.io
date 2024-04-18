@@ -1,0 +1,267 @@
+body{
+    overflow-x: hidden;
+    font-size: 16px;
+    background-image: url(../img/back_warkscontents.svg);
+    background-repeat: repeat;
+    background-size: 100%;
+    color: #353535;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+#menu{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: right;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+    z-index: 100;
+    border-bottom: 1px black solid;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    top: 0px;
+}
+
+#menu li{
+    margin-right: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#menu li::after{
+    content: "";
+    width: 7px;
+    height: 7px;
+    background: linear-gradient(to right, rgb(255, 0, 60), rgb(255, 67, 30), rgb(255, 132, 0), rgb(255, 0, 0)) 0% center/200%;
+    animation: rain 2s linear infinite;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 15px;
+    opacity: 0;
+    transition: 1s;
+}
+
+#menu li:hover::after{
+    opacity: 1;
+}
+
+@keyframes rain{
+    100%{
+            background-position-x: 200%;
+    }
+}
+
+#main{
+    width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    align-items:flex-start
+}
+
+#title_warks{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 100px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title_warks h1{
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 5px;
+}
+
+.title_sab{
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+#setumei{
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+    margin-top: 75px;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+#info{
+    width: 1200px;
+    margin: auto;
+    margin-top: 75px;
+}
+
+.contents_info{
+    border: 1.5px #353535 solid;
+    margin: 60px 0 60px 0;
+    padding: 40px;
+    background-color: white;
+    position: relative;
+}
+
+.contents_info h3{
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #353535;
+    border-radius: 50px;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+}
+
+.contents_info h4{
+    text-align: center;
+    font-size: 20px;
+    font-weight:400;
+}
+
+.list_target{
+    display: flex;
+}
+
+.list_target li{
+    width: 200px;
+    margin: auto;
+    height: 200px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 4px dotted #353535;
+    line-height: 40px;
+    padding: 35px;
+}
+
+#contents{
+    width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    height: auto;
+}
+
+#contents li{
+    margin-top: 50px;
+}
+
+#contents li:last-child{
+    padding-bottom: 100px;
+}
+
+#contents_sab{
+    display: flex;
+}
+
+.warks_sab img{
+    width: 500px;
+}
+
+.warks_sab{
+    width: 500px;
+    margin: 0 50px 0 50px;
+}
+
+/* 学校さいと */
+
+.school{
+    width: 2000px;
+    height: 3000px;
+    background-color: #C1DBE7;
+    padding: 50px 0 50px 0;
+}
+
+.school li{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+/* アーティストサイト */
+
+.art{
+    width: 2000px;
+    height: 3000px;
+    background-color: #978ABD;
+    padding: 50px 0 50px 0;
+}
+
+.art li{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+/* 水族館 */
+
+.suizokukann{
+    width: 2000px;
+    height: 3000px;
+    background-color: #ADD9DF;
+    padding: 50px 0 50px 0;
+}
+
+.suizokukann li{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+/* ポストカード */
+
+.card{
+    display: flex;
+}
+
+/* ハチミツ */
+
+.hachi{
+    width: 2000px;
+    height: 3000px;
+    background-color: #E4E4E4;
+    padding: 50px 0 50px 0;
+}
+
+.hachi li{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+/* 展覧会 */
+
+.tenran{
+    width: 2000px;
+    height: 3000px;
+    background-color: #E4E4E4;
+    padding: 50px 0 50px 0;
+    display: flex;
+}
+
+.tenran li{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
